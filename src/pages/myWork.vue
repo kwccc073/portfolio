@@ -8,6 +8,7 @@
         <h1>前端網頁開發技術課程－期末專題報告</h1>
         <v-btn href="https://kwccc073.github.io/GrooveShare/#/">點我進入網站</v-btn>
         <v-btn to="introduceGS">點我看功能介紹</v-btn>
+        <finalProject></finalProject>
     </section>
     <section id="lineBot">
         <h1>前端網頁開發技術課程－期中作業Line機器人</h1>
@@ -31,3 +32,7 @@ section{
     }
 }
 </style>
+
+<script>
+import finalProject from '@/components/finalProject.vue';
+</script>
