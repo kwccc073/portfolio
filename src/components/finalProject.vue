@@ -3,6 +3,7 @@
         <section id="WebIntroduction">
             <!-- ****LOGO**** -->
              <div>
+                <img src="../assets/GrooveShare/LOGO-wr.png" alt="網站LOGO">
                 <p>
                     爵士鼓展現律動與節奏的魅力，取其精髓以「Groove」作為名稱的一部份，再融合象徵分享與交流精神的「Share」，最終將網站命名為「GrooveShare」，以傳達網站的核心精神，致力於音樂與資源的共享與互動。
                 </p>
