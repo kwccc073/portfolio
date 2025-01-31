@@ -1,6 +1,7 @@
 <template>
     <section id="introduce">
-        簡單介紹***待編輯
+        <!-- <h1>作品介紹</h1> -->
+        <!-- <workIntroduce></workIntroduce> -->
     </section>
     <!-- id暫時叫project***待編輯*** -->
     <!-- 專專題網頁GrooveShare -->
@@ -22,7 +23,7 @@
 <style scoped lang="scss">
 section{
     width: 100%;
-    height: 100vh;
+   
 
     &:nth-child(odd) {
         background-color: lightblue;
@@ -35,4 +36,5 @@ section{
 
 <script>
 import finalProject from '@/components/finalProject.vue';
+import WorkIntroduce from '@/components/workIntroduce.vue';
 </script>
