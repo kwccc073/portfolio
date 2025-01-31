@@ -26,10 +26,10 @@ section{
    
 
     &:nth-child(odd) {
-        background-color: lightblue;
+        // background-color: lightblue;
     }
     &:nth-child(even) {
-        background-color: lightgray;
+        // background-color: lightgray;
     }
 }
 </style>
