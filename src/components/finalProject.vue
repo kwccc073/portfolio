@@ -103,22 +103,22 @@
                 <div class="GS_stage_illustrate">
                     <v-row>
                         <v-col cols="12">
-                            <v-card variant="outlined">
-                                <v-card-title>編輯鼓譜功能</v-card-title>
-                                <v-card-text>建立一個寫譜的網站，使鼓譜的編輯更加便利。</v-card-text>
-                            </v-card>
+                            <div class="functionBox">
+                                <h4>編輯鼓譜功能</h4>
+                                <p>建立一個寫譜的網站，使鼓譜的編輯更加便利。</p>
+                            </div>
                         </v-col>
                         <v-col cols="12">
-                            <v-card variant="outlined">
-                                <v-card-title>搜尋鼓譜功能</v-card-title>
-                                <v-card-text>於網站上搜尋特定曲風、歌手或樂團，快速找到需要的鼓譜。</v-card-text>
-                            </v-card>
+                            <div class="functionBox">
+                                <h4>搜尋鼓譜功能</h4>
+                                <p>於網站上搜尋特定曲風、歌手或樂團，快速找到需要的鼓譜。</p>
+                            </div>
                         </v-col>
                         <v-col cols="12">
-                            <v-card variant="outlined">
-                                <v-card-title>練鼓室資訊上傳及查詢功能</v-card-title>
-                                <v-card-text>各地區鼓手可上傳附近練鼓室價格及預約方式等資訊，方便查詢。</v-card-text>
-                            </v-card>
+                            <div class="functionBox">
+                                <h4>練鼓室資訊上傳及查詢功能</h4>
+                                <p>各地區鼓手可上傳附近練鼓室價格及預約方式等資訊，方便查詢。</p>
+                            </div>
                         </v-col>
                     </v-row>
                 </div>
@@ -142,8 +142,9 @@
                             </v-col>
                         </v-row>
                         <br>
-                        <li>透過實體關係圖(ERD)規劃資料庫結構，清楚定義資料間的邏輯與關聯性。</li>
+                        <li>透過實體關係圖(ERD)規劃資料庫結構，清晰定義資料間的邏輯與關聯性。其中，爵士鼓的主要音色包括 HiHat、小鼓與大鼓，因此分為三個項目（scoreHiHat、scoreSnare、scoreKick），並以三層陣列結構來儲存資料。這三層由外至內分別對應小節、拍數及拍內的細分節奏單位，確保鼓譜資料能夠精準呈現與利用。</li>
                         <img src="../assets/GrooveShare/database.png" alt="資料庫結構" id="databaseImg">
+                        <img src="../assets/GrooveShare/three-layerArray.png" alt="三層陣列圖說" id="three-layerArray">
                         <br>
                         <br>
                         <li>使用 Figma 製作介面草圖，方便後續開發階段。</li>
@@ -167,80 +168,87 @@
                 </div>
 
                 <div class="GS_stage_illustrate">
-                    <ul>
-                        <li>使用技術</li>
-                        <v-row id="developmentSkill">
-                            <v-col cols="12" md="4">
-                                <v-card
-                                    class="mx-auto"
-                                    title="前端">
-                                        <v-card-text>
-                                            <img src="../assets/skills/html.png" alt="html">
-                                            <img src="../assets/skills/js.png" alt="js">
-                                            <img src="../assets/skills/scss.png" alt="scss">
-                                            <img src="../assets/skills/vueJS.png" alt="vueJS">
-                                            <img src="../assets/skills/vuetify.png" alt="vuetify">
-                                        </v-card-text>
-                                </v-card>
-                            </v-col>
-                            <v-col cols="12" md="4">
-                                <v-card
-                                    class="mx-auto"
-                                    title="後端">
-                                        <v-card-text>
-                                            <img src="../assets/skills/nodeJS.png" alt="nodeJS">
-                                            <img src="../assets/skills/mongoDB.png" alt="mongoDB">
-                                        </v-card-text>
-                                </v-card>
-                            </v-col>
-                            <v-col cols="12" md="4">
-                                <v-card
-                                    class="mx-auto"
-                                    title="視覺">
-                                        <v-card-text>
-                                            <img src="../assets/skills/figma.png" alt="figma">
-                                            <img src="../assets/skills/ai.png" alt="ai">
-                                        </v-card-text>
-                                </v-card>
-                            </v-col>
-                        </v-row>
-                        <br>
-                        <li>程式撰寫</li>
-                        <v-card variant="outlined">
-                            <v-card-title>前端</v-card-title>
-                            <v-card-text>
-                                <ul>
-                                    <li>根據先前製作的介面草圖進行切版，完成導覽列與首頁、尋找練鼓室、尋找鼓譜與會員專區等頁面的版面設計。</li>
-                                    <li>為提升使用者體驗，實現響應式網頁設計(RWD)，使網站能在不同裝置上保持良好視覺效果與流暢性。</li>
-                                </ul>
-                            </v-card-text>
-                        </v-card>
-                        <v-card variant="outlined">
-                            <v-card-title>後端</v-card-title>
-                            <v-card-text>
-                                <ul>
-                                    <li>建立資料庫模型</li>
-                                    <li>撰寫 API 功能</li>
-                                </ul>
-                            </v-card-text>
-                        </v-card>
-                        <v-card variant="outlined">
-                            <v-card-title>整合</v-card-title>
-                            <v-card-text>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </v-card-text>
-                        </v-card>
-                        <br>
-                        <li>功能測試</li>
-                    </ul>
+                    <h3>使用技術</h3>
+                    <v-row id="developmentSkill">
+                        <v-col cols="12" md="4">
+                            <v-card
+                                class="mx-auto"
+                                title="前端">
+                                    <v-card-text>
+                                        <img src="../assets/skills/html.png" alt="html">
+                                        <img src="../assets/skills/js.png" alt="js">
+                                        <img src="../assets/skills/scss.png" alt="scss">
+                                        <img src="../assets/skills/vueJS.png" alt="vueJS">
+                                        <img src="../assets/skills/vuetify.png" alt="vuetify">
+                                    </v-card-text>
+                            </v-card>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <v-card
+                                class="mx-auto"
+                                title="後端">
+                                    <v-card-text>
+                                        <img src="../assets/skills/nodeJS.png" alt="nodeJS">
+                                        <img src="../assets/skills/mongoDB.png" alt="mongoDB">
+                                    </v-card-text>
+                            </v-card>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <v-card
+                                class="mx-auto"
+                                title="視覺">
+                                    <v-card-text>
+                                        <img src="../assets/skills/figma.png" alt="figma">
+                                        <img src="../assets/skills/ai.png" alt="ai">
+                                    </v-card-text>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                    <br>
+                    <h3>程式撰寫</h3>
+                    <v-row>
+                        <v-col cols="2">
+                            <h4>前端</h4>
+                        </v-col>
+                        <v-col cols="10">
+                            <ul>
+                                <li>根據先前製作的介面草圖進行切版，完成導覽列與各頁面的版面設計。</li>
+                                <li>為提升使用者體驗，實現響應式網頁設計(RWD)，使網站能在不同裝置上保持良好視覺效果與流暢性。</li>
+                            </ul>
+                        </v-col>
+                        <v-col cols="12">
+                            <hr>
+                        </v-col>
+                        <v-col cols="2">
+                            <h4>後端</h4>
+                        </v-col>
+                        <v-col cols="10">
+                            <h5>建立資料庫模型</h5>
+                            <ul>
+                                <li>使用 Mongoose 定義資料格式與限制條件，並對特定欄位進行驗證。若格式不符即拋出錯誤，回傳錯誤訊息給前端。</li>
+                            </ul>
+                            <h5><br>編寫API請求</h5>
+                            <ul>
+                                <li>根據前端需求，撰寫不同API請求要執行的程式碼，如新增、修改、刪除和查詢的操作，並支援排序條件、每頁顯示數量等參數的動態調整。</li>
+                                <li>為了應對可能的錯誤情況，也撰寫了相應的錯誤處理機制。當錯誤發生時，根據錯誤類型返回適當的 HTTP 狀態碼與詳細錯誤訊息，幫助快速釐清問題並進行修正。</li>
+                            </ul>
+                        </v-col>
+                        <v-col cols="12">
+                            <hr>
+                        </v-col>
+                        <v-col cols="2">
+                            <h4>整合</h4>
+                        </v-col>
+                        <v-col cols="10">
+                            <ul>
+                                <li>將前後端進行整合並測試，確保前端能正確傳送請求至後端，後端也能執行對應的程式碼並回傳所需的資料。</li>
+                                <li>將網站佈署至雲端並上傳至GitHub，確保網站可被外界訪問與使用。</li>
+                            </ul>
+                        </v-col>
+                    </v-row>
+                    <br>
                 </div>
             </div>
-        </section>
-        <section id="GS_keyPoint">
-            <h1>重點介紹</h1>
         </section>
     </v-container>
 </template>
@@ -253,12 +261,21 @@
 
 section{
     padding: 15px;
-    font-size: 20px;
+    font-size: 1.2rem;
     h1{
-        font-size: 30px;
+        font-size: 1.9rem;
     }
     h2{
-        font-size: 24px;
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    h5{
+        font-size: 1.3rem;
     }
 }
 
@@ -334,7 +351,7 @@ section{
         width: 100%;
     }
     ul{
-        padding-left: 30px;
+        padding-left: 1rem;
     }
     .GS_stage_illustrate{
         .text{
@@ -348,6 +365,12 @@ section{
 
 // 功能構思-------------
 #GS_stage_function{
+    .functionBox{
+        width: 100%;
+        border-radius: 2%;
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
 }
 
 // 網站架構規劃-------------------
@@ -357,6 +380,9 @@ section{
     }
     #databaseImg{
         width: 80%;
+    }
+    #three-layerArray{
+        width: 70%;
     }
 }
 
@@ -380,7 +406,30 @@ section{
                 }
             }
         }
+    }
+    .v-row{
+        ul{
+            padding-left: 1rem;
+        }
+        .v-col:nth-child(1),
+        .v-col:nth-child(4),
+        .v-col:nth-child(7){
+            // background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            h4{
+                background: lightgray;
+                color: black;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }
 </style>

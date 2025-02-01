@@ -1,25 +1,24 @@
 <template>
   <!-- 導覽列---------------------------- -->
-  <v-app-bar elevation="0" color="black" height="100">
-    <div id="bar-container">
-      我是導覽列
-      <v-spacer></v-spacer>
-
+  <!-- <v-app-bar elevation="0" color="black" height="100"> -->
+    <!-- <div id="bar-container"> -->
+      <!-- 我是導覽列 -->
+      <!-- <v-spacer></v-spacer> -->
       <!-- 漢堡按鈕（行動裝置才會出現） -->
-      <v-app-bar-nav-icon v-if="mobile"></v-app-bar-nav-icon>
+      <!-- <v-app-bar-nav-icon v-if="mobile"></v-app-bar-nav-icon> -->
       
       <!-- 電腦版按鈕 -->
-      <template v-if="!mobile">
-        <template v-for="item in navItems" :key="item.to">
-          <v-btn
-            :prepend-icon="item.prependIcon"
-            :to="item.to">
-            {{item.title}}
-          </v-btn>
-        </template>
-      </template>
-    </div>
-  </v-app-bar>
+      <!-- <template v-if="!mobile"> -->
+        <!-- <template v-for="item in navItems" :key="item.to"> -->
+          <!-- <v-btn -->
+            <!-- :prepend-icon="item.prependIcon" -->
+            <!-- :to="item.to"> -->
+            <!-- {{item.title}} -->
+          <!-- </v-btn> -->
+        <!-- </template> -->
+      <!-- </template> -->
+    <!-- </div> -->
+  <!-- </v-app-bar> -->
   <!-- 主要內容(page)---------- -->
   <v-main>
     <router-view />
