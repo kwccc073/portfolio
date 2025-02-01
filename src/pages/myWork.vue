@@ -6,9 +6,12 @@
     <!-- id暫時叫project***待編輯*** -->
     <!-- 專專題網頁GrooveShare -->
     <section id="project">
-        <h1>前端網頁開發技術課程－期末專題報告</h1>
-        <v-btn href="https://kwccc073.github.io/GrooveShare/#/">點我進入網站</v-btn>
-        <v-btn to="introduceGS">點我看功能介紹</v-btn>
+        <h1>
+            前端網頁開發技術課程－期末專題報告
+            <v-btn variant="tonal" href="https://kwccc073.github.io/GrooveShare/#/">點我前往網站</v-btn>
+        </h1>
+        
+        <!-- <v-btn to="introduceGS">點我看功能介紹</v-btn> -->
         <finalProject></finalProject>
     </section>
     <section id="lineBot">
