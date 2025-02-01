@@ -28,9 +28,6 @@
 
 </template>
 
-<script setup>
-</script>
-
 <style scoped lang="scss">
 section{
     width: 100%;
@@ -43,7 +40,7 @@ section{
 // 跳到特定區塊的時候會被導覽列遮住部分***待編輯***
 </style>
 
-<script>
+<script setup>
 // 以下是myWork.vue分頁的內容
 import finalProject from '@/components/finalProject.vue';
 import WorkIntroduce from '@/components/workIntroduce.vue';
