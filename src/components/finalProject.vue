@@ -45,21 +45,40 @@
                         </v-card>
                     </v-col>
                 </v-row>
-                <!-- 感覺可以以v-card呈現**待編輯** -->
-                <!-- <ul>
-                    <li>
-                        <b>寫譜專區：</b>輕鬆創作並上傳鼓譜，記錄每段喜愛的節奏。
-                    </li>
-                    <li>
-                        <b>播放鼓譜音效：</b>每個鼓譜都能即時播放音效，快速掌握音樂律動。
-                    </li>
-                    <li>
-                        <b>搜尋與收藏鼓譜：</b>不僅能輕鬆搜尋鼓譜，還能收藏喜愛的作品，隨時隨地回顧與練習。
-                    </li>
-                    <li>
-                        <b>尋找練鼓室：</b>快速找到適合的練習場地，提供地址、電話及租借費用等詳細資訊。
-                    </li>
-                </ul> -->
+                <br>
+                <h1>使用技術</h1>
+                <v-row id="developmentSkill">
+                        <v-col cols="12" md="4">
+                            <v-card class="mx-auto">
+                                <v-card-title><b>前端</b></v-card-title>
+                                    <v-card-text>
+                                        <img src="../assets/skills/html.png" alt="html">
+                                        <img src="../assets/skills/js.png" alt="js">
+                                        <img src="../assets/skills/scss.png" alt="scss">
+                                        <img src="../assets/skills/vueJS.png" alt="vueJS">
+                                        <img src="../assets/skills/vuetify.png" alt="vuetify">
+                                    </v-card-text>
+                            </v-card>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <v-card class="mx-auto">
+                                <v-card-title><b>後端</b></v-card-title>
+                                    <v-card-text>
+                                        <img src="../assets/skills/nodeJS.png" alt="nodeJS">
+                                        <img src="../assets/skills/mongoDB.png" alt="mongoDB">
+                                    </v-card-text>
+                            </v-card>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <v-card class="mx-auto">
+                                <v-card-title><b>視覺</b></v-card-title>
+                                    <v-card-text>
+                                        <img src="../assets/skills/figma.png" alt="figma">
+                                        <img src="../assets/skills/ai.png" alt="ai">
+                                    </v-card-text>
+                            </v-card>
+                        </v-col>
+                    </v-row>
 
              </div>
         </section>
@@ -168,43 +187,6 @@
                 </div>
 
                 <div class="GS_stage_illustrate">
-                    <h3>使用技術</h3>
-                    <v-row id="developmentSkill">
-                        <v-col cols="12" md="4">
-                            <v-card
-                                class="mx-auto"
-                                title="前端">
-                                    <v-card-text>
-                                        <img src="../assets/skills/html.png" alt="html">
-                                        <img src="../assets/skills/js.png" alt="js">
-                                        <img src="../assets/skills/scss.png" alt="scss">
-                                        <img src="../assets/skills/vueJS.png" alt="vueJS">
-                                        <img src="../assets/skills/vuetify.png" alt="vuetify">
-                                    </v-card-text>
-                            </v-card>
-                        </v-col>
-                        <v-col cols="12" md="4">
-                            <v-card
-                                class="mx-auto"
-                                title="後端">
-                                    <v-card-text>
-                                        <img src="../assets/skills/nodeJS.png" alt="nodeJS">
-                                        <img src="../assets/skills/mongoDB.png" alt="mongoDB">
-                                    </v-card-text>
-                            </v-card>
-                        </v-col>
-                        <v-col cols="12" md="4">
-                            <v-card
-                                class="mx-auto"
-                                title="視覺">
-                                    <v-card-text>
-                                        <img src="../assets/skills/figma.png" alt="figma">
-                                        <img src="../assets/skills/ai.png" alt="ai">
-                                    </v-card-text>
-                            </v-card>
-                        </v-col>
-                    </v-row>
-                    <br>
                     <h3>程式撰寫</h3>
                     <v-row>
                         <v-col cols="2">
@@ -253,7 +235,7 @@
     </v-container>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .v-container{
     // background: cadetblue;
     padding: 0;
@@ -288,9 +270,20 @@ section{
         // background: cadetblue;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 10px;
         img{
             height: 55vh;
+            width: auto;
+
+            // 當螢幕小尺寸時
+            @media (max-width: 1330px) {
+                width: 100%;
+                height: auto;
+                &:nth-child(2){
+                    display: none;
+                }
+            }
         }
     }
 
@@ -309,6 +302,26 @@ section{
             padding-left: 50px;
         }
     }
+
+    #developmentSkill{
+        .v-card{
+            height: 100%;
+            background: lightgray;
+            color: black;
+
+            .v-card-text{
+                display: flex;
+                flex-wrap: wrap; // 自動換行
+                justify-content: space-evenly;
+                align-items: center;
+                img{
+                    height: 52px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
 }
 
 

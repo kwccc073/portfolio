@@ -9,7 +9,7 @@
         <!-- <h1>作品介紹</h1> -->
         <!-- <workIntroduce></workIntroduce> -->
     <!-- </section> -->
-    <section id="project">
+    <section id="finalProject">
         <h1>
             前端網頁開發技術課程－期末專題報告
             <v-btn variant="tonal" href="https://kwccc073.github.io/GrooveShare/#/">點我前往網站</v-btn>
@@ -20,6 +20,7 @@
     </section>
     <!-- <section id="lineBot"> -->
         <!-- <h1>前端網頁開發技術課程－期中作業Line機器人</h1> -->
+        <!-- <lineBot></lineBot> -->
     <!-- </section> -->
     <!-- <section id="game"> -->
         <!-- <h1>前端網頁開發技術課程－期中作業小遊戲</h1> -->
@@ -36,12 +37,16 @@ section{
     // &:nth-child(odd) {
     //     background-color: lightblue;
     // }
+    h1{
+        // margin-bottom: 1rem;
+    }
 }
 // 跳到特定區塊的時候會被導覽列遮住部分***待編輯***
 </style>
 
 <script setup>
 // 以下是myWork.vue分頁的內容
-import finalProject from '@/components/finalProject.vue';
 import WorkIntroduce from '@/components/workIntroduce.vue';
+import finalProject from '@/components/finalProject.vue';
+import lineBot from '@/components/lineBot.vue';
 </script>
