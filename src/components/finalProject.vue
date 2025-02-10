@@ -11,37 +11,37 @@
                     爵士鼓展現律動與節奏的魅力，取其精髓以「Groove」作為名稱的一部份，再融合象徵分享與交流精神的「Share」，最終將網站命名為「GrooveShare」，以傳達網站的核心精神，致力於音樂與資源的共享與互動。
                 </p>
                 <h1>網站功能</h1>
-                <v-row>
-                    <v-col cols="6" md="3">
+                <v-row id="webFunction">
+                    <v-col cols="12" md="3">
                         <v-card variant="outlined">
-                            <v-card-title>
+                            <v-card-text>
                                 <v-icon> mdi-pencil-outline</v-icon>
                                 寫譜
-                            </v-card-title>
+                            </v-card-text>
                         </v-card>
                     </v-col>
-                    <v-col cols="6" md="3">
+                    <v-col cols="12" md="3">
                         <v-card variant="outlined">
-                            <v-card-title>
+                            <v-card-text>
                                 <v-icon> mdi-bullhorn-outline</v-icon>
                                 鼓譜音效播放
-                            </v-card-title>
+                            </v-card-text>
                         </v-card>
                     </v-col>
-                    <v-col cols="6" md="3">
+                    <v-col cols="12" md="3">
                         <v-card variant="outlined">
-                            <v-card-title>
+                            <v-card-text>
                                 <v-icon> mdi-folder-search-outline</v-icon>
                                 搜尋與收藏鼓譜
-                            </v-card-title>
+                            </v-card-text>
                         </v-card>
                     </v-col>
-                    <v-col cols="6" md="3">
+                    <v-col cols="12" md="3">
                         <v-card variant="outlined">
-                            <v-card-title>
+                            <v-card-text>
                                 <v-icon> mdi-home-search-outline</v-icon>
                                 上傳與尋找練鼓室
-                            </v-card-title>
+                            </v-card-text>
                         </v-card>
                     </v-col>
                 </v-row>
@@ -153,10 +153,10 @@
                     <ul>
                         <li>繪製網站架構圖，確立前後端功能配置。</li>
                         <v-row>
-                            <v-col cols="6">
+                            <v-col cols="12" lg="6">
                                 <img src="../assets/GrooveShare/Architecture_front.png" alt="前端架構" class="architectureImg">
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="12" lg="6">
                                 <img src="../assets/GrooveShare/Architecture_back.png" alt="後端架構" class="architectureImg">
                             </v-col>
                         </v-row>
@@ -167,14 +167,19 @@
                         <br>
                         <br>
                         <li>使用 Figma 製作介面草圖，方便後續開發階段。</li>
-                        <!-- 手機版figma介面待編輯**** -->
-                        <!-- 部分未完成的功能待編輯**** -->
-                        <div style="overflow: hidden; width: 80%; height: 60vh;">
-                            <iframe src="https://embed.figma.com/proto/lvxbUfRJcc7AGehnhCUcrs/%E5%B0%88%E9%A1%8C?node-id=1-12&scaling=min-zoom&content-scaling=fixed&page-id=1%3A11&starting-point-node-id=1%3A12&embed-host=share"
-                                    style="border: none; width: 200%; height: 200%; transform: scale(0.5); transform-origin: 0 0;">
+                        <!-- 電腦版figma -->
+                        <div style="overflow: hidden; width: 100%; height: 60vh;" v-if="(!xs&&!sm)">
+                            <iframe 
+                                src="https://embed.figma.com/proto/lvxbUfRJcc7AGehnhCUcrs/%E5%B0%88%E9%A1%8C?node-id=1-12&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A11&starting-point-node-id=1%3A12&embed-host=share"
+                                style="border: none; width: 200%; height: 200%; transform: scale(0.5); transform-origin: 0 0;" allowfullscreen>
                             </iframe>
                         </div>
-
+                        <!-- 手機板figma -->
+                        <div style="overflow: hidden; width: 100%; height: 60vh;" v-if="(xs||sm)">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);width: 200%; height: 200%; transform: scale(0.5); transform-origin: 0 0;"  
+                                    src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/lvxbUfRJcc7AGehnhCUcrs/%E5%B0%88%E9%A1%8C?node-id=1-14&p=f&scaling=contain&frame-shape=none&starting-point-node-id=1%3A14" 
+                                    allowfullscreen></iframe>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -287,12 +292,6 @@ section{
         }
     }
 
-
-    #GS_logo{
-        width: 70%;
-        display: block;
-        margin: auto;
-    }
     div{
         p{
             // background: rebeccapurple;
@@ -303,6 +302,14 @@ section{
         }
     }
 
+    // 網站功能
+    #webFunction{
+        // background: cadetblue;
+        .v-card-text{
+            font-size: 1.2rem;
+        }
+    }
+    // 使用技術
     #developmentSkill{
         .v-card{
             height: 100%;
@@ -321,7 +328,6 @@ section{
             }
         }
     }
-
 }
 
 
@@ -392,10 +398,10 @@ section{
         width: 100%;
     }
     #databaseImg{
-        width: 80%;
+        width: 90%;
     }
     #three-layerArray{
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -435,14 +441,24 @@ section{
             h4{
                 background: lightgray;
                 color: black;
-                width: 5rem;
-                height: 5rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1rem;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
             }
         }
     }
 }
 </style>
+
+<script setup>
+// 引入斷點
+import { useDisplay } from 'vuetify'
+
+const { xs,sm } = useDisplay() // 手機斷點
+
+</script>

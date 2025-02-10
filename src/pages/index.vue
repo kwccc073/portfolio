@@ -11,8 +11,10 @@
     <!-- </section> -->
     <section id="finalProject">
         <h1>
-            前端網頁開發技術課程－期末專題報告
-            <v-btn variant="tonal" href="https://kwccc073.github.io/GrooveShare/#/">點我前往網站</v-btn>
+            前端網頁開發技術課程－
+            <br v-if="mobile">
+            期末專題報告
+            <v-btn variant="tonal" href="https://kwccc073.github.io/GrooveShare/#/">前往網站</v-btn>
         </h1>
         
         <!-- <v-btn to="introduceGS">點我看功能介紹</v-btn> -->
@@ -39,6 +41,9 @@ section{
     // }
     h1{
         // margin-bottom: 1rem;
+        // @media (max-width: 500px) {
+        //     font-size: 1.1em;
+        // }    
     }
 }
 // 跳到特定區塊的時候會被導覽列遮住部分***待編輯***
@@ -49,4 +54,10 @@ section{
 import WorkIntroduce from '@/components/workIntroduce.vue';
 import finalProject from '@/components/finalProject.vue';
 import lineBot from '@/components/lineBot.vue';
+
+// 引入斷點
+import { useDisplay } from 'vuetify'
+
+const { mobile } = useDisplay() // 手機斷點
+
 </script>
