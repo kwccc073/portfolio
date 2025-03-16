@@ -16,7 +16,7 @@
                         <v-card variant="outlined">
                             <v-card-text>
                                 <v-icon> mdi-pencil-outline</v-icon>
-                                寫譜
+                                線上寫譜
                             </v-card-text>
                         </v-card>
                     </v-col>
@@ -40,7 +40,7 @@
                         <v-card variant="outlined">
                             <v-card-text>
                                 <v-icon> mdi-home-search-outline</v-icon>
-                                上傳與尋找練鼓室
+                                練鼓室資訊交流
                             </v-card-text>
                         </v-card>
                     </v-col>
@@ -123,19 +123,19 @@
                     <v-row>
                         <v-col cols="12">
                             <div class="functionBox">
-                                <h4>編輯鼓譜功能</h4>
+                                <h4>線上編輯鼓譜</h4>
                                 <p>建立一個寫譜的網站，使鼓譜的編輯更加便利。</p>
                             </div>
                         </v-col>
                         <v-col cols="12">
                             <div class="functionBox">
-                                <h4>搜尋鼓譜功能</h4>
+                                <h4>尋找鼓譜</h4>
                                 <p>於網站上搜尋特定曲風、歌手或樂團，快速找到需要的鼓譜。</p>
                             </div>
                         </v-col>
                         <v-col cols="12">
                             <div class="functionBox">
-                                <h4>練鼓室資訊上傳及查詢功能</h4>
+                                <h4>練鼓室資訊交流</h4>
                                 <p>各地區鼓手可上傳附近練鼓室價格及預約方式等資訊，方便查詢。</p>
                             </div>
                         </v-col>
@@ -192,7 +192,7 @@
                 </div>
 
                 <div class="GS_stage_illustrate">
-                    <h3>程式撰寫</h3>
+                    <!-- <h3>程式撰寫</h3> -->
                     <v-row>
                         <v-col cols="2">
                             <h4>前端</h4>
